@@ -26,7 +26,8 @@ public class Circle implements  Shape{
 		this.radius = radius;
 	}
 
-	public void draw() {
+    @Override
+    public void draw(Graphics canvas) {
 		System.out.println("Circle: Draw() [Color : " + color
 				+", x : " + x +", y :" + y +", radius :" + radius);
 	}
